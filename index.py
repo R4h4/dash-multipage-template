@@ -17,6 +17,7 @@ LinkedIn: https://linkedin.com/in/karsten-eckhardt/
 Created at: 2019-05-26
 """
 
+app.title = "Dash Application"
 
 # Example layout using a fixed Navbar based on https://dash-bootstrap-components.opensource.faculty.ai/
 navbar = dbc.NavbarSimple(
