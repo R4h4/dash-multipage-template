@@ -7,7 +7,7 @@ However, the beginning of a new Dash-multi-page app can be tedious.
 This repository offers a basic boilerplate for such apps. To us it, 
 clone this repository and remove the original git connection with the following commands:
 ``` git-clone-command
-git clone https://github.com/r4h4/dash-multipage-template.git
+git clone --depth=1 https://github.com/r4h4/dash-multipage-template.git
 rm -rf ./dash-multipage-template/.git
 ```
 Next, install all requirements with the pip command:
