@@ -22,7 +22,7 @@ this template also contains [dash-bootstrap-components](https://dash-bootstrap-c
 ## Deployment
 There are multiple ways to put your app online, here are the three 
 easiest:
-#### AWS Lambda (using Zappa)
+### AWS Lambda (using Zappa)
 Serverless deployment on AWS Lambda is maybe the easiest an, at least for the prototyping stage, cheapest option to deploy your app. The best way to do so is to use [Zappa](https://github.com/Miserlou/Zappa). 
 Install the package with:
 ```install-zappa
@@ -67,7 +67,7 @@ zappa> zappa deploy dev
 (Credit to [Wong Yan Yee](https://medium.com/@houdinisparks/how-i-build-an-authenticated-serverless-flask-api-with-zappa-and-docker-for-a-model-582fc48fa0e0) 
 for this solution.)  
  
-#### Heroku
+### Heroku
 [Heroku](https://www.heroku.com/) is another simple way to run your app without having to manage any infrastructure. For deployment on Heroku, you need a WSGI HTTP server. Gunicorn is a simple way that can be installed using PyPi.
 ```
 pip install gunicorn
@@ -78,7 +78,7 @@ web: gunicorn --timeout 300 app:server
 ```
 After signing up for Heroku, create a new app, and connect it with your GitHub repository. This step automatically creates a deployment-pipeline that builds and deploys every change made to the repository.
 
-#### Docker
+### Docker
 Last but not least, you can also create a Docker container yourself and deploy how- and wherever you want. Similar to Heroku (which in the 
 background also runs your app inside a Docker container on AWS 
 infrastructure) I recommend using Gunicorn as WSGI HTTP server.
@@ -101,4 +101,4 @@ CMD ["gunicorn", "-b", "0.0.0.0:8000", "app"]
 ```
 
 If this template is helpful to you, support me by leaving a star 
-on GitHub, 10 claps on [Medium](https://medium.com/@karsteneckhardt) and consider following me.
+on GitHub, clap for me on [Medium](https://medium.com/@karsteneckhardt) and consider following me.
