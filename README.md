@@ -1,14 +1,16 @@
-# Dash App boilerplate template
+# Dash Multi-Page App template
 [Plotly's Dash](https://github.com/plotly/dash) is one of 
 the most amazing projects of the past year, finally making it possible
 to develop full-size web-applications using only Python.
 
 However, the beginning of a new Dash-multi-page app can be tedious. 
-This repository offers a basic boilerplate for such apps. To us it, 
+This repository offers a basic template for such apps. To us it, 
 clone this repository and remove the original git connection with the following commands:
 ``` git-clone-command
 git clone --depth=1 https://github.com/r4h4/dash-multipage-template.git
 rm -rf ./dash-multipage-template/.git
+ren dash-multipage-template your-project-name
+git init your-project-name
 ```
 Next, install all requirements with the pip command:
 ```install-packages
