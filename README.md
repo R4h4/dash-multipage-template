@@ -29,7 +29,7 @@ pip install zappa
 ```
 Afterward, you can initialize the process using `zappa init`. Afterward 
  I recommend following the instructions on the official page. 
- Point the `app_function` to `app.server`.
+ Point the `app_function` to `index.server`.
  
 Note that AWS Lambda has a relatively moderate size limit of 500MB 
 for temporary files (when the `slim_handler` is set to `True`), 
