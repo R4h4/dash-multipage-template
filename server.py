@@ -6,7 +6,7 @@ from random import randint
 import dash
 import dash_bootstrap_components as dbc
 
-# Fpr apps that use flask_sqlalchemy, the database can also be initialised here
+# For apps that use flask_sqlalchemy, the database can also be initialised here
 # from models.db_config import Config
 
 

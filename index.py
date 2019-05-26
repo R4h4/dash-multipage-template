@@ -8,6 +8,16 @@ from server import app, server  # Import server for Gunicorn
 from pages import home
 
 
+"""
+A simply Dash multi-page app template by Karsten Eckhardt.
+GitHub: https://github.com/R4h4/
+Medium: https://medium.com/@karsteneckhardt
+LinkedIn: https://linkedin.com/in/karsten-eckhardt/
+
+Created at: 2019-05-26
+"""
+
+
 # Example layout using a fixed Navbar based on https://dash-bootstrap-components.opensource.faculty.ai/
 navbar = dbc.NavbarSimple(
     children=[
