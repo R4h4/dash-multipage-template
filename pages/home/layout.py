@@ -27,7 +27,7 @@ commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
 amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed
 odio dui."""
                         ),
-                        dbc.Button("View details", color="secondary"),
+                        dbc.Button("Open Modal", id='open', color="secondary"),
                     ],
                     md=4,
                 ),
@@ -40,7 +40,17 @@ odio dui."""
                     ]
                 ),
             ]
-        )
+        ),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Header"),
+                dbc.ModalBody("This is the content of the modal"),
+                dbc.ModalFooter(
+                    dbc.Button("Close", id="close", className="ml-auto")
+                ),
+            ],
+            id="modal",
+        ),
     ],
     className="mt-4",
 )
